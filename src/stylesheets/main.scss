@@ -1,3 +1,132 @@
-/* Your styles go here */
+//before bootstrap
+
+$primary: #0077D9;
+$secondary: #003B6B;
+$white: white;
+$success: #646364;
+
+$carousel-control-color: $success;
+
+
+// bootstrop
 @import "bootstrap/scss/bootstrap.scss";
 @import "bootstrap-icons/font/bootstrap-icons.css";
+
+$gray: #646364;
+
+//after bootstrap
+
+body{
+    font-family: 'Voltaire', sans-serif;
+    font-size: 1.5rem;
+}
+
+h1, h2, h3, h4, h5, h6{
+    font-family: 'Anton', sans-serif;
+    color: $gray;
+}
+
+h1{
+    font-size: 4rem;
+}
+
+.hero{
+    font-family: 'Voltaire', sans-serif;
+}
+
+.hero-form{
+    max-width: 500px;   
+    color: white;
+}
+
+.howItWorks{
+    text-align: center;
+    padding-top: 5rem;
+}
+
+.howItWorks > hr{
+    max-width: 200px;
+
+}
+
+.smallText{
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+}
+
+.bi-1-circle, .bi-2-circle, .bi-3-circle, .bi-4-circle, .bi-5-circle, .bi-6-circle{
+    color: $primary;
+    height: 50px;
+}
+
+.howItWorks-steps{
+    max-width: 80vw;
+    font-size: 2rem;
+}
+
+.advantages{
+    background-color: gray 50%;
+}
+
+ul{
+    list-style-type: circle;
+}
+
+.testimonials{
+    text-align: center;
+}
+
+.mainPoint{
+    max-height: 1000px;
+    color: #0077D9;
+    text-align: center;
+}
+
+.pointText{
+    padding-top: 12rem;
+}
+
+.pointText > h1{
+    color: #0077D9;
+}
+
+.pointText > button{
+    color: white;
+    font-size: 3rem;
+}
+
+.faqs{
+    text-align: center;
+}
+
+.accordion{
+    max-width: 800px;
+}
+
+.purchases{
+    text-align: center;
+}
+
+.card{
+    font-size: .75rem;
+}
+
+footer{
+    color: white;
+}
+
+footer > .row > .col > img{
+    max-height: 100px;
+}
+
+@include media-breakpoint-up(sm){
+    .hero-form{
+        display: none;
+    }
+}
+
+@include media-breakpoint-up(md){
+    .hero-form{
+        display: block;
+    }
+}
